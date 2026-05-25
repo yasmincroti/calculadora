@@ -34,7 +34,8 @@ main {
     padding: 2rem;
 }
 
-.conta{
+.conta,
+.gorgeta {
     margin-bottom: 2rem;
 }
 
@@ -76,6 +77,7 @@ main {
     outline: 2px solid var(--light-green);
 }
 
+
 .gorgeta div{
     margin-top: 1rem;
 
@@ -83,9 +85,30 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     
+}
+
+.gorgeta input{
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    outline: none;
+    padding-block: 0.4rem;
+    border-radius: 0.3125rem;
+    background-color: var(--green-800);
+    color: var(--white);
 
 }
 
 .gorgeta #outra {
     width: 100%;
+    background-color: var(--green-100);
+    color: var(--green-500);
+
 }
+
+.gorgeta #outra::placeholder{
+    color: var(--green-300);
+
+}
+
