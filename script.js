@@ -26,7 +26,7 @@ function receberQuantidadePessoas(evento) {
       pessoas = Number(evento.target.value)
     }
 
-   
+   calcular{}
 }
 
 
@@ -51,9 +51,25 @@ function receberPorcentagem(evento){
         porcentagem = 0
     }
 
-    porcentagem = parseFloat(evento.target.value) / 100
-    console.log(porcentagem)
+   
+   calcular{}
 }
 
 const gorjetaInput = document.querySelector("#outra")
 gorjetaInput.addEventListener("Input", receberPorcentagem)
+
+function calcular() {
+    if(conta !== 0 && gorjeta !== 0 && pessoas !== 0){
+        const strongGorjetaTotal = document.querySelector(".gorjeta-total > strong")
+        strongGorjetaTotal.innerHTML = `R$ $ {(conta * porcentagem / pessoas).toFixed(2)`}
+
+    
+
+                const strongTotal = document.querySelector (".total > strong")
+           strongTotal = `R$ $ {((conta + (conta * porcentagem )) / pessoas)`.toFixed}
+    } 
+}
+        
+
+
+
